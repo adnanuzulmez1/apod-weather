@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #29293b;
+    font-family: "Zilla Slab", serif;
+    background-image: url(images/weather.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: background-image .5s;
+}
+
+.apod {
+    animation: fade-anim .8s 1;
+    background-image: url(images/rocket.jpg) !important;
+}
+
+.fade-anim {
+    animation: fade-anim .8s 1;
+}
+
+#apod-container {
+    margin-top: 150px;
+}
+
+.menu button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none !important;
+    background-image: url(images/nasa.png);
+    background-size: cover;
+    background-position-x: -18px;
+    transition: background-image .5s;
+}
+
+.bg-weather {
+    background-image: url(images/weather.jpg) !important;
+    transition: background-image .5s;
+}
+
+.menu span {
+    position: relative;
+    bottom: 18px;
+    font-size: 20px;
+    color: rgba(240, 248, 255, 0.658);
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.btn-item {
+    margin-left: 15px;
+}
+
+.photo {
+    width: 30%;
+    height: 175px;
+    object-fit: cover;
+    border: 0.25rem solid black;
+    border-radius: 10px;
+}
+
+.menu-items {
+    display: flex;
+    margin: 20px 0;
+}
+
+.menu-info {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+h4 {
+    color: #e00a00;
+}
+
+.menu-text {
+    padding-top: 20px;
+}
+
+#user-list li {
+    transition: 1s;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #6464643d;
+}
+
+#user-list img {
+    width: 600px;
+    margin: 10px 0px;
+}
+
+#user-list iframe {
+    width: 600px;
+    margin: 10px 0px;
+}
+
+#user-list p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(224, 224, 224);
+}
+
+.submit {
+    width: 20%;
+    outline: none !important;
+    border: none;
+    background-color: #c9c9c9;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    height: 10%;
+}
+
+.date {
+    margin: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+h3 {
+    margin: 10px;
+    font-weight: 600;
+    color: #ffffffef;
+}
+
+.dates span {
+    margin: 10px;
+    font-weight: 600;
+    color: #f57b51;
+    letter-spacing: 1px;
+}
+
+.nasa {
+    width: 300px;
+    position: relative;
+}
+
+.menu {
+    margin-left: 20px;
+}
+
+.none {
+    display: none;
+}
+
+.col-lg-2 h3 {
+    margin: 10px;
+}
+
+h4 {
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+#weather-row {
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+#weather-container {
+    margin-top: 150px;
+}
+
+h5 {
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+#first-weather {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#weather-row .col-lg-1 h3 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#weather-row .col-lg-2 {
+    margin: 10px;
+    transition: .2s;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#weather-row .col-lg-2 img {
+    width: 100px;
+}
+
+#weather-row .col-lg-2:hover {
+    background-color: transparent;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.24);
+}
+
+.city {
+    font-weight: 600;
+}
+
+.weather-input {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-input input {
+    width: 50%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+    color: rgba(255, 255, 255, 0.658);
+    font-size: 25px;
+}
+
+.weather-input input::placeholder {
+    color: rgba(255, 255, 255, 0.568);
+}
+
+#select-box {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.582);
+    color: #2a2a3698;
+}
+
+#weather-btn {
+    background-color: rgba(255, 255, 255, 0.562);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.582);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #2a2a3698;
+}
+
+#first-weather .weather-now {
+    margin-top: 70px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 10px;
+}
+
+#weather-button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 2px;
+    outline: none !important;
+    margin-top: 30px;
+}
+
+.fl-center {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes fade-anim {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
